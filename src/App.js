@@ -1,12 +1,16 @@
 import './App.css';
 import Title from './components/Title'
-import styled from 'styled-components/macro'
+import GlobalStyles from './GlobalStyles';
 
 function App() {
   return (
-    <div className="App">
-      <Title />
-    </div>
+    <>
+      <div className="App">
+        <Title />
+      </div>
+
+      <GlobalStyles />
+    </>
   );
 }
 
