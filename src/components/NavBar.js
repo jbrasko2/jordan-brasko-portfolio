@@ -4,13 +4,26 @@ import styled from 'styled-components/macro'
 
 const NavBar = () => {
     return (
-        <Wrapper>
-            <LeftWrapper>
-                <Link to='/'>
-                    <LinkButton>Jordan Brasko</LinkButton>
-                </Link>
-            </LeftWrapper>
-            <RightWrapper>
+        <>
+            <Wrapper>
+                <LeftWrapper>
+                    <Link to='/'>
+                        <LinkButton>Jordan Brasko</LinkButton>
+                    </Link>
+                </LeftWrapper>
+                <RightWrapperLarge>
+                    <Link to='/about'>
+                        <LinkButton>About</LinkButton>
+                    </Link>
+                    <Link to='/projects'>
+                        <LinkButton>Projects</LinkButton>
+                    </Link>
+                    <Link to='/contact'>
+                        <LinkButton>Contact</LinkButton>
+                    </Link>
+                </RightWrapperLarge>
+            </Wrapper>
+            <RightWrapperSmall>
                 <Link to='/about'>
                     <LinkButton>About</LinkButton>
                 </Link>
@@ -20,15 +33,14 @@ const NavBar = () => {
                 <Link to='/contact'>
                     <LinkButton>Contact</LinkButton>
                 </Link>
-            </RightWrapper>
-        </Wrapper>
+            </RightWrapperSmall>
+        </>
     )
 }
 
 const Wrapper = styled.nav`
     position: sticky;
     width: 100vw;
-    top: 0;
     height: 48px;
     background-color: hsl(0, 0%, 100%);
     border-bottom: 1px solid hsl(0, 0%, 90%);
@@ -37,27 +49,59 @@ const Wrapper = styled.nav`
 const LeftWrapper = styled.div`
     float: left;
     height: 48px;
-    margin-left: 24px;
+    a {
+        height: 100%;
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+    }
+    
+    @media (max-width: 600px) {
+        float: none;
+        a {
+            display: block;
+
+            &:hover {
+                background-color: #ededed;
+            }
+        }
+    }
+
+`
+
+const RightWrapperLarge = styled.div`
+    float: right;
+    height: 48px;
     a {
         font-size: 1rem;
         text-decoration: none;
         color: black;
+    }
+    
+    @media (max-width: 600px) {
+        a {
+            display: none;
+        }
     }
 `
 
-const RightWrapper = styled.div`
-    float: right;
-    height: 48px;
-    margin-right: 24px;
+const RightWrapperSmall = styled.div`
+    display: block;
     a {
         font-size: 1rem;
         text-decoration: none;
         color: black;
+        display: none;
     }
-
+    
     @media (max-width: 600px) {
         a {
             display: block;
+            border-bottom: 1px solid hsl(0, 0%, 90%);
+
+            &:hover {
+                background-color: #ededed;
+            }
         }
     }
 `
@@ -72,5 +116,4 @@ const LinkButton = styled.div`
         background-color: #ededed;
     }
 `
-
 export default NavBar

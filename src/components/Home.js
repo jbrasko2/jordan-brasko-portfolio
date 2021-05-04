@@ -23,6 +23,10 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     padding: 100px 0;
+
+    @media (max-width: 600px) {
+        padding: 24px;
+    }
 `
 
 const ProfileCard = styled.div`
