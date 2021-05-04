@@ -57,7 +57,7 @@ const LeftWrapper = styled.div`
         color: hsl(0, 0%, 25%);
     }
     
-    @media (max-width: 600px) {
+    @media (max-width: 740px) {
         float: none;
         a {
             display: block;
@@ -79,7 +79,7 @@ const RightWrapperLarge = styled.div`
         color: hsl(0, 0%, 25%);
     }
     
-    @media (max-width: 600px) {
+    @media (max-width: 740px) {
         a {
             display: none;
         }
@@ -95,7 +95,7 @@ const RightWrapperSmall = styled.div`
         display: none;
     }
     
-    @media (max-width: 600px) {
+    @media (max-width: 740px) {
         a {
             display: block;
             border-bottom: 1px solid hsl(0, 0%, 90%);
