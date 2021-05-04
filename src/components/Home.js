@@ -41,7 +41,6 @@ const ProfileCard = styled.div`
 `
 
 const ProfileIntro = styled.div`
-    padding: 24px;
     text-align: center;
     font-size: 1.5rem;
 `
