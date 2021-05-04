@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import profileImage from '../images/35239659_10155244881526114_8170993985775468544_o.jpg'
+import profileImage from '../images/profile.jpg'
 
 const Home = () => {
     return (
@@ -10,7 +10,7 @@ const Home = () => {
                 <ProfileIntro>
                     <h1>Hello! I'm Jordan.</h1>
                     I am a full stack developer specializing in React, Ruby on
-                    Rails and JavaScript. I have solid professional background in e-commerce 
+                    Rails and JavaScript. I have a solid professional background in e-commerce 
                     and experience as a touring musician. I use a creative 
                     approach to problem-solving that helps innovators produce 
                     consumer-facing products in new and interesting ways.

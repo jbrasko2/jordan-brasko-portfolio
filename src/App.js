@@ -3,7 +3,7 @@ import NavBar from './components/NavBar'
 import GlobalStyles from './GlobalStyles';
 import { Switch, Route } from 'react-router-dom'
 import Home from './components/Home'
-import Projects from './components/Projects'
+import Projects from './containers/Projects'
 import Contact from './components/Contact'
 
 
