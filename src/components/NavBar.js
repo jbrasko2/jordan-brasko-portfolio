@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components/macro'
+import resume from '../Jordan Brasko Resume - Styled.pdf'
 
 const NavBar = () => {
     return (
@@ -12,9 +13,9 @@ const NavBar = () => {
                     </Link>
                 </LeftWrapper>
                 <RightWrapperLarge>
-                    <Link to='/about'>
-                        <LinkButton>About</LinkButton>
-                    </Link>
+                    <a target="_blank" href={resume} rel="noopener noreferrer">
+                        <LinkButton>Resume</LinkButton>
+                    </a>
                     <Link to='/projects'>
                         <LinkButton>Projects</LinkButton>
                     </Link>
@@ -24,9 +25,9 @@ const NavBar = () => {
                 </RightWrapperLarge>
             </Wrapper>
             <RightWrapperSmall>
-                <Link to='/about'>
-                    <LinkButton>About</LinkButton>
-                </Link>
+                <a target="_blank" href={resume} rel="noopener noreferrer">
+                    <LinkButton>Resume</LinkButton>
+                </a>
                 <Link to='/projects'>
                     <LinkButton>Projects</LinkButton>
                 </Link>

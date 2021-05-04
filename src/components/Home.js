@@ -6,11 +6,12 @@ const Home = () => {
     return (
         <Wrapper>
             <ProfileCard>
-                <img src={profileImage} />
+                <img src={profileImage} alt='profile'/>
                 <ProfileIntro>
-                    Full stack developer specializing in React, Ruby on
-                    Rails and JavaScript. Solid professional background in e-commerce 
-                    and experience as a touring musician. Uses a creative 
+                    <h1>Hello! I'm Jordan.</h1>
+                    I am a full stack developer specializing in React, Ruby on
+                    Rails and JavaScript. I have solid professional background in e-commerce 
+                    and experience as a touring musician. I use a creative 
                     approach to problem-solving that helps innovators produce 
                     consumer-facing products in new and interesting ways.
                  </ProfileIntro>
