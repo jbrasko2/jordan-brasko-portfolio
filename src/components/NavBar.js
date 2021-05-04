@@ -14,6 +14,12 @@ const NavBar = () => {
                 <Link to='/about'>
                     <LinkButton>About</LinkButton>
                 </Link>
+                <Link to='/projects'>
+                    <LinkButton>Projects</LinkButton>
+                </Link>
+                <Link to='/contact'>
+                    <LinkButton>Contact</LinkButton>
+                </Link>
             </RightWrapper>
         </Wrapper>
     )
@@ -21,6 +27,7 @@ const NavBar = () => {
 
 const Wrapper = styled.nav`
     position: sticky;
+    width: 100vw;
     top: 0;
     height: 48px;
     background-color: hsl(0, 0%, 100%);
@@ -30,6 +37,7 @@ const Wrapper = styled.nav`
 const LeftWrapper = styled.div`
     float: left;
     height: 48px;
+    margin-left: 24px;
     a {
         font-size: 1rem;
         text-decoration: none;
@@ -39,19 +47,29 @@ const LeftWrapper = styled.div`
 
 const RightWrapper = styled.div`
     float: right;
+    height: 48px;
+    margin-right: 24px;
     a {
         font-size: 1rem;
         text-decoration: none;
         color: black;
     }
+
+    @media (max-width: 600px) {
+        a {
+            display: block;
+        }
+    }
 `
 
 const LinkButton = styled.div`
+    display: inline-block;
     height: 100%;
-    padding: .5rem 1rem;
+    padding: .75rem 1rem;
+    letter-spacing: .25rem;
 
     &:hover {
-        background-color: #d6e3ff;
+        background-color: #ededed;
     }
 `
 
