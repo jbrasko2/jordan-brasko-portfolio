@@ -29,8 +29,9 @@ const Wrapper = styled.nav`
 
 const LeftWrapper = styled.div`
     float: left;
+    height: 48px;
     a {
-        font-size: 1.15rem;
+        font-size: 1rem;
         text-decoration: none;
         color: black;
     }
@@ -38,9 +39,8 @@ const LeftWrapper = styled.div`
 
 const RightWrapper = styled.div`
     float: right;
-
     a {
-        font-size: 1.15rem;
+        font-size: 1rem;
         text-decoration: none;
         color: black;
     }
@@ -48,9 +48,10 @@ const RightWrapper = styled.div`
 
 const LinkButton = styled.div`
     height: 100%;
+    padding: .5rem 1rem;
 
     &:hover {
-        background-color: hsl(0, 0%, 50%);
+        background-color: #d6e3ff;
     }
 `
 
