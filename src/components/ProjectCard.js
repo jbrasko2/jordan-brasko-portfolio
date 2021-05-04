@@ -19,9 +19,11 @@ const ProjectCard = props => {
 }
 
 const Wrapper = styled.div`
+    display: inline-block;
     max-width: 600px;
     margin: 24px;
     border: 3px solid black;
+    overflow: auto;
 
     a {
         text-decoration: none;
