@@ -54,7 +54,7 @@ const LeftWrapper = styled.div`
         height: 100%;
         font-size: 1rem;
         text-decoration: none;
-        color: black;
+        color: hsl(0, 0%, 25%);
     }
     
     @media (max-width: 600px) {
@@ -76,7 +76,7 @@ const RightWrapperLarge = styled.div`
     a {
         font-size: 1rem;
         text-decoration: none;
-        color: black;
+        color: hsl(0, 0%, 25%);
     }
     
     @media (max-width: 600px) {
@@ -91,7 +91,7 @@ const RightWrapperSmall = styled.div`
     a {
         font-size: 1rem;
         text-decoration: none;
-        color: black;
+        color: hsl(0, 0%, 25%);
         display: none;
     }
     

@@ -32,6 +32,7 @@ const Wrapper = styled.div`
 
 const ProfileCard = styled.div`
     max-width: 800px;
+    padding: 24px;
 
     img {
         display: block;
@@ -43,6 +44,7 @@ const ProfileCard = styled.div`
 const ProfileIntro = styled.div`
     text-align: center;
     font-size: 1.5rem;
+    color: hsl(0, 0%, 25%);
 `
 
 export default Home
