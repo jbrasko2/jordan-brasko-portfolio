@@ -9,16 +9,16 @@ import linkedinIcon from '../images/linkedinIcon.png'
 const Contact = () => {
     return (
         <Wrapper>
-            <LinkWrapper href='email'>
+            <LinkWrapper href="mailto: jordan.brasko@gmail.com" rel="noopener noreferrer" target="_blank">
                 <img src={emailIcon} alt='email'></img>
             </LinkWrapper>
-            <LinkWrapper href='email'>
+            <LinkWrapper href='https://github.com/jbrasko2' rel="noopener noreferrer" target="_blank">
                 <img src={githubIcon} alt='github'></img>
             </LinkWrapper>
-            <LinkWrapper href='email'>
+            <LinkWrapper href='https://www.instagram.com/mr.jordan.brasko' rel="noopener noreferrer" target="_blank">
                 <img src={instagramIcon} alt='instagram'></img>
             </LinkWrapper>
-            <LinkWrapper href='email'>
+            <LinkWrapper href='https://www.linkedin.com/in/jordan-brasko/' rel="noopener noreferrer" target="_blank">
                 <img src={linkedinIcon} alt='linkedin'></img>
             </LinkWrapper>
         </Wrapper>
