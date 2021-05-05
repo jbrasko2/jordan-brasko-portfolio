@@ -2,3 +2,8 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serf;
 }
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}

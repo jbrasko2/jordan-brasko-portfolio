@@ -1,19 +1,19 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import { Link } from 'react-router-dom'
+import gitLogo from '../images/GitHub-Mark-64px.png'
 
 const ProjectCard = props => {
     const { id, name, desc, tools, url, github, image } = props
     return (
         <Wrapper>
-            <Link to={url}>
-                <CardWrapper>
-                    <Title>{name}</Title>
-                    <ProjectImage src={image} />
-                </CardWrapper>
-            </Link>
-            <Description>{desc}</Description>
-            <Tools>{tools}</Tools>
+            <a href={url}>
+                <Title>{name}</Title>
+                <ProjectImage src={image} />
+                <Description>{desc}</Description>
+                <Tools>{tools}</Tools>
+            </a>
+            <a href={github}><GitHubLogo src={gitLogo}></GitHubLogo></a>
         </Wrapper>
     )
 }
@@ -22,8 +22,13 @@ const Wrapper = styled.div`
     display: inline-block;
     max-width: 600px;
     margin: 24px;
-    border: 3px solid black;
-    overflow: auto;
+    background-color: #efefef;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2);
+    }
 
     a {
         text-decoration: none;
@@ -31,10 +36,9 @@ const Wrapper = styled.div`
     }
 `
 
-const CardWrapper = styled.div`
-`
-
 const Title = styled.h1`
+    margin: 0;
+    padding: 24px 0;
     text-align: center;
     letter-spacing: 0.25rem;
     font-weight: 300;
@@ -54,6 +58,10 @@ const Tools = styled.p`
     padding: 24px;
     text-align: center;
     border-top: 1px solid grey;
+`
+
+const GitHubLogo = styled.img`
+        padding-bottom: 24px;
 `
 
 export default ProjectCard

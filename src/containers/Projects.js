@@ -39,13 +39,8 @@ class Projects extends Component {
 }
 
 const Wrapper = styled.div`
-    display: flex;
-    justify-content: center;
     padding: 50px 0;
-
-    @media (max-width: 740px) {
-        flex-direction: column;
-    }
+    text-align: center;
 `
 
 export default Projects
