@@ -3,6 +3,7 @@ import styled from 'styled-components/macro'
 import ProjectCard from '../components/ProjectCard'
 import simpleSynth from '../images/SimpleSynth.PNG'
 import waveShop from '../images/WaveShop.PNG'
+import bandManager from '../images/BandManager.PNG'
 
 class Projects extends Component {
 
@@ -25,6 +26,15 @@ class Projects extends Component {
             url: "https://jbrasko2.github.io/simple-synth-frontend/", 
             github:"https://github.com/jbrasko2/simple-synth-frontend", 
             image: simpleSynth
+          },
+          {
+            id: 3,
+            name: "Band Manager",
+            desc: "App designed for band managers to keep track of the bands they manage and the members included in each band.",
+            tools: "Ruby on Rails", 
+            url: "https://github.com/jbrasko2/rails-band-manager", 
+            github:"https://github.com/jbrasko2/rails-band-manager", 
+            image: bandManager
           }
         ]
     }

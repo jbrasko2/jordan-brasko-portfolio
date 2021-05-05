@@ -1,19 +1,20 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import { Link } from 'react-router-dom'
 import gitLogo from '../images/GitHub-Mark-64px.png'
 
 const ProjectCard = props => {
-    const { id, name, desc, tools, url, github, image } = props
+    const { name, desc, tools, url, github, image } = props
     return (
         <Wrapper>
             <Title>{name}</Title>
-            <a href={url}>
+            <a href={url} target="_blank" rel="noopener noreferrer">
                 <ProjectImage src={image} />
             </a>
             <Description>{desc}</Description>
             <Tools>{tools}</Tools>
-            <a href={github}><GitHubLogo src={gitLogo}></GitHubLogo></a>
+            <a href={github} target="_blank" rel="noopener noreferrer">
+                <GitHubLogo src={gitLogo} />
+            </a>
         </Wrapper>
     )
 }
@@ -41,7 +42,6 @@ const Title = styled.h1`
 
 const ProjectImage = styled.img`
     width: 85%;
-    margin: 0 24px;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
     transition: 0.3s;
 
