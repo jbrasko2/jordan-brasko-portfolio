@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import profileImage from '../images/profile.jpg'
+import Contact from './Contact'
 
 const Home = () => {
     return (
         <Wrapper>
             <ProfileCard>
-                <img src={profileImage} alt='profile'/>
+                <ProfileImage src={profileImage} alt='profile'/>
                 <ProfileIntro>
                     <h1>Hello! I'm Jordan.</h1>
                     I am a full stack developer specializing in React, Ruby on
@@ -16,13 +17,12 @@ const Home = () => {
                     consumer-facing products in new and interesting ways.
                  </ProfileIntro>
             </ProfileCard>
+            <Contact />
         </Wrapper>
     )
 }
 
 const Wrapper = styled.div`
-    display: flex;
-    justify-content: center;
     padding: 100px 0;
 
     @media (max-width: 600px) {
@@ -31,14 +31,15 @@ const Wrapper = styled.div`
 `
 
 const ProfileCard = styled.div`
+    margin: 0 auto;
     max-width: 800px;
     padding: 24px;
+`
 
-    img {
-        display: block;
-        margin: 0 auto;
-        border-radius: 50%;
-    }
+const ProfileImage = styled.img`
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
 `
 
 const ProfileIntro = styled.div`

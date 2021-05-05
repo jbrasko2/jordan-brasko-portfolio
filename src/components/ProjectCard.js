@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import gitLogo from '../images/GitHub-Mark-64px.png'
 
 const ProjectCard = props => {
     const { name, desc, tools, url, github, image } = props
@@ -11,24 +10,30 @@ const ProjectCard = props => {
                 <ProjectImage src={image} />
             </a>
             <Description>{desc}</Description>
+            <Line />
             <Tools>{tools}</Tools>
-            <a href={github} target="_blank" rel="noopener noreferrer">
-                <GitHubLogo src={gitLogo} />
-            </a>
+            <Line />
+            <LinkWrapper>
+                <a href={url} target="_blank" rel="noopener noreferrer">Website</a>
+            </LinkWrapper>
+            &bull;
+            <LinkWrapper>
+                <a href={github} target="_blank" rel="noopener noreferrer">GitHub</a>
+            </LinkWrapper>
         </Wrapper>
     )
 }
 
 const Wrapper = styled.div`
     display: inline-block;
-    max-width: 600px;
+    max-width: 400px;
     margin: 24px;
     background-color: #efefef;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
 
     a {
         text-decoration: none;
-        color: black;
+        color: hsl(0, 0%, 25%);
     }
 `
 
@@ -52,17 +57,28 @@ const ProjectImage = styled.img`
 
 const Description = styled.p`
     text-align: center;
-    padding: 24px;
+    padding: 12px;
 `
 
 const Tools = styled.p`
-    padding: 24px;
+    padding: 12px;
     text-align: center;
-    border-top: 1px solid grey;
 `
 
-const GitHubLogo = styled.img`
-        padding-bottom: 24px;
+const LinkWrapper = styled.div`
+    display: inline-block;
+    padding: 12px 24px;
+    
+    a {
+        color: #018d7f;
+        text-decoration: underline;
+    }
+`
+
+const Line = styled.div`
+    margin: 0 auto;
+    width: 75%;
+    border-top: 1px solid gray;
 `
 
 export default ProjectCard

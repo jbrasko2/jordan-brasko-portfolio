@@ -13,7 +13,7 @@ class Projects extends Component {
             id: 1,
             name: "WaveShop",
             desc: "Mock web store for exploring, reviewing and purchasing electronic instruments.",
-            tools: "React - Redux - Thunk - Ruby on Rails API - PostgreSQL database", 
+            tools: "React | Redux | Thunk | Ruby on Rails API | PostgreSQL Database", 
             url: "https://jbrasko2.github.io/waveshop-frontend/#/", 
             github:"https://github.com/jbrasko2/waveshop-frontend", 
             image: waveShop
@@ -22,7 +22,7 @@ class Projects extends Component {
             id: 2,
             name: "Simple Synth",
             desc: "In-browser musical synthesizer that allows users to play and experiment with sound synthesis. Features the ability to save and load presets.",
-            tools: "React - Redux - Thunk - Ruby on Rails API - PostgreSQL database", 
+            tools: "JavaScript | Ruby on Rails API | PostgreSQL Database | Tone.js | NexusUI", 
             url: "https://jbrasko2.github.io/simple-synth-frontend/", 
             github:"https://github.com/jbrasko2/simple-synth-frontend", 
             image: simpleSynth
@@ -31,7 +31,7 @@ class Projects extends Component {
             id: 3,
             name: "Band Manager",
             desc: "App designed for band managers to keep track of the bands they manage and the members included in each band.",
-            tools: "Ruby on Rails", 
+            tools: "Ruby on Rails | OmniAuth (Facebook) | bcrypt", 
             url: "https://github.com/jbrasko2/rails-band-manager", 
             github:"https://github.com/jbrasko2/rails-band-manager", 
             image: bandManager

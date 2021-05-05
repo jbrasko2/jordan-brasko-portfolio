@@ -19,9 +19,6 @@ const NavBar = () => {
                     <Link to='/projects'>
                         <LinkButton>Projects</LinkButton>
                     </Link>
-                    <Link to='/contact'>
-                        <LinkButton>Contact</LinkButton>
-                    </Link>
                 </RightWrapperLarge>
             </Wrapper>
             <RightWrapperSmall>
