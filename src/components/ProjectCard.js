@@ -65,7 +65,7 @@ const Tools = styled.p`
     text-align: center;
 `
 
-const LinkWrapper = styled.div`
+const LinkWrapper = styled.p`
     display: inline-block;
     padding: 12px 24px;
     
