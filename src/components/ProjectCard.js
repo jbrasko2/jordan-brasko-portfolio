@@ -7,12 +7,12 @@ const ProjectCard = props => {
     const { id, name, desc, tools, url, github, image } = props
     return (
         <Wrapper>
+            <Title>{name}</Title>
             <a href={url}>
-                <Title>{name}</Title>
                 <ProjectImage src={image} />
-                <Description>{desc}</Description>
-                <Tools>{tools}</Tools>
             </a>
+            <Description>{desc}</Description>
+            <Tools>{tools}</Tools>
             <a href={github}><GitHubLogo src={gitLogo}></GitHubLogo></a>
         </Wrapper>
     )
@@ -24,11 +24,6 @@ const Wrapper = styled.div`
     margin: 24px;
     background-color: #efefef;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-    transition: 0.3s;
-
-    &:hover {
-        box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2);
-    }
 
     a {
         text-decoration: none;
@@ -45,8 +40,14 @@ const Title = styled.h1`
 `
 
 const ProjectImage = styled.img`
-    width: 100%;
-    padding: 0 24px;
+    width: 85%;
+    margin: 0 24px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2);
+    }
 `
 
 const Description = styled.p`
