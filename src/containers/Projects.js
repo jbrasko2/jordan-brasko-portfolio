@@ -32,7 +32,7 @@ class Projects extends Component {
             name: "Band Manager",
             desc: "App designed for band managers to keep track of the bands they manage and the members included in each band.",
             tools: "Ruby on Rails | OmniAuth (Facebook) | bcrypt", 
-            url: "https://github.com/jbrasko2/rails-band-manager", 
+            url: "https://rails-band-manager.herokuapp.com/", 
             github:"https://github.com/jbrasko2/rails-band-manager", 
             image: bandManager
           }
