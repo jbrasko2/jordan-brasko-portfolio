@@ -33,7 +33,7 @@ const Home = () => {
 }
 
 const Wrapper = styled.div`
-    padding: 24px 0;
+    padding: 48px 0;
 
     @media (max-width: 740px) {
         padding: 24px;

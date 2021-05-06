@@ -37,7 +37,8 @@ const NavBar = () => {
 }
 
 const Wrapper = styled.nav`
-    position: sticky;
+    position: fixed;
+    top: 0;
     width: 100vw;
     height: 48px;
     background-color: hsl(0, 0%, 100%);
@@ -52,11 +53,8 @@ const LeftWrapper = styled.div`
         font-size: 1rem;
         text-decoration: none;
         color: hsl(0, 0%, 25%);
-    }
-    
-    @media (max-width: 740px) {
-        float: none;
-        a {
+
+        @media (max-width: 740px) {
             display: block;
 
             &:hover {
@@ -64,37 +62,29 @@ const LeftWrapper = styled.div`
             }
         }
     }
-
 `
 
 const RightWrapperLarge = styled.div`
     float: right;
     height: 48px;
+
     a {
-        font-size: 1rem;
         text-decoration: none;
         color: hsl(0, 0%, 25%);
-    }
-    
-    @media (max-width: 740px) {
-        a {
+
+        @media (max-width: 740px) {
             display: none;
         }
     }
 `
 
 const RightWrapperSmall = styled.div`
-    display: block;
     a {
-        font-size: 1rem;
-        text-decoration: none;
-        color: hsl(0, 0%, 25%);
         display: none;
-    }
-    
-    @media (max-width: 740px) {
-        a {
+
+        @media (max-width: 740px) {
             display: block;
+            color: hsl(0, 0%, 25%);
             border-bottom: 1px solid hsl(0, 0%, 90%);
 
             &:hover {
@@ -106,7 +96,6 @@ const RightWrapperSmall = styled.div`
 
 const LinkButton = styled.div`
     display: inline-block;
-    height: 100%;
     padding: .75rem 1rem;
     letter-spacing: .25rem;
 
