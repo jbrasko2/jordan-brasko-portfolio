@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,KACE,QAAS,CACT,iCACF,CAEA,UACE,cAAe,CACf,iBACF","file":"main.bbbe156b.chunk.css","sourcesContent":["body {\n  margin: 0;\n  font-family: 'Open Sans', sans-serf;\n}\n\nhtml, body {\n  max-width: 100%;\n  overflow-x: hidden;\n}"]}
