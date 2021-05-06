@@ -48,6 +48,7 @@ const Wrapper = styled.nav`
 const LeftWrapper = styled.div`
     float: left;
     height: 48px;
+    
     a {
         height: 100%;
         font-size: 1rem;
@@ -66,7 +67,6 @@ const LeftWrapper = styled.div`
 
 const RightWrapperLarge = styled.div`
     float: right;
-    height: 48px;
 
     a {
         text-decoration: none;
