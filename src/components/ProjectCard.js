@@ -30,6 +30,7 @@ const Wrapper = styled.div`
     margin: 24px;
     background-color: #efefef;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    text-align: center;
 
     a {
         text-decoration: none;
@@ -47,6 +48,7 @@ const Title = styled.h1`
 
 const ProjectImage = styled.img`
     width: 85%;
+    height: 240px;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
     transition: 0.3s;
 
