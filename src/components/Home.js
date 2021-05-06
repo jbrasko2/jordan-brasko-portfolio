@@ -11,7 +11,7 @@ const Home = () => {
                 <ProfileIntro>
                     <h1>Hi there! I'm Jordan.</h1>
                     I am a full stack developer specializing in React, Ruby on
-                    Rails and JavaScript. I have a solid professional background in e-commerce 
+                    Rails and JavaScript. I have a professional background in e-commerce 
                     and experience as a touring musician. I use a creative 
                     approach to problem-solving that helps innovators produce 
                     consumer-facing products in new and interesting ways.
@@ -23,7 +23,7 @@ const Home = () => {
                     <br/>
                     <br/>
                     I'm looking forward to joining a team that values collaboration, encourages individuality and
-                    above all, provides dental. 
+                    provides dental &#128513;. 
 
                  </ProfileIntro>
             </ProfileCard>
