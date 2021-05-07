@@ -4,6 +4,7 @@ import ProjectCard from '../components/ProjectCard'
 import simpleSynth from '../images/SimpleSynth.PNG'
 import waveShop from '../images/WaveShop.PNG'
 import bandManager from '../images/BandManager.PNG'
+import { FadeInUp } from 'animate-css-styled-components'
 
 class Projects extends Component {
 
@@ -42,7 +43,11 @@ class Projects extends Component {
     render() {
         return (
             <Wrapper>
-                {this.state.projects.map(project => <ProjectCard key={project.id} {...project} />)}
+                {this.state.projects.map(project => 
+                  <FadeInUp delay={project.id * .1 +"s"} style={{display: 'flex'}}>
+                    <ProjectCard key={project.id} {...project} />
+                  </FadeInUp>
+                )}
             </Wrapper>
         )
     }
@@ -53,6 +58,7 @@ const Wrapper = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     padding: 50px 0;
+    overflow: hidden;
 `
 
 export default Projects
