@@ -41,7 +41,7 @@ const Home = () => {
 }
 
 const Wrapper = styled.div`
-    padding: 48px 0;
+    padding: 24px 0;
     overflow: hidden;
 
     @media (max-width: 740px) {

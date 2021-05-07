@@ -9,18 +9,16 @@ import Projects from './containers/Projects'
 class App extends Component {
   render () {
     return (
-      <>
         <div className="App">
           <NavBar />
+
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/projects' component={Projects} />
+          </Switch>
+
+          <GlobalStyles />
         </div>
-
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/projects' component={Projects} />
-        </Switch>
-
-        <GlobalStyles />
-      </>
     )
   }
 }

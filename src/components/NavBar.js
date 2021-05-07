@@ -28,17 +28,12 @@ const NavBar = () => {
                 <Link to='/projects'>
                     <LinkButton>Projects</LinkButton>
                 </Link>
-                <Link to='/contact'>
-                    <LinkButton>Contact</LinkButton>
-                </Link>
             </RightWrapperSmall>
         </>
     )
 }
 
 const Wrapper = styled.nav`
-    position: fixed;
-    top: 0;
     width: 100vw;
     height: 48px;
     background-color: hsl(0, 0%, 100%);
@@ -47,17 +42,19 @@ const Wrapper = styled.nav`
 
 const LeftWrapper = styled.div`
     float: left;
-    height: 48px;
+    height: 100%;
+
+    @media (max-width: 740px) {
+        float: none;
+    }
     
     a {
         height: 100%;
-        font-size: 1rem;
-        text-decoration: none;
         color: hsl(0, 0%, 25%);
-
+        
         @media (max-width: 740px) {
             display: block;
-
+            
             &:hover {
                 background-color: #ededed;
             }
@@ -67,11 +64,11 @@ const LeftWrapper = styled.div`
 
 const RightWrapperLarge = styled.div`
     float: right;
-
+    height: 100%;
+    
     a {
-        text-decoration: none;
         color: hsl(0, 0%, 25%);
-
+        
         @media (max-width: 740px) {
             display: none;
         }
@@ -86,7 +83,7 @@ const RightWrapperSmall = styled.div`
             display: block;
             color: hsl(0, 0%, 25%);
             border-bottom: 1px solid hsl(0, 0%, 90%);
-
+            
             &:hover {
                 background-color: #ededed;
             }
@@ -96,9 +93,9 @@ const RightWrapperSmall = styled.div`
 
 const LinkButton = styled.div`
     display: inline-block;
+    height: 100%;
     padding: .75rem 1rem;
     letter-spacing: .25rem;
-
     &:hover {
         background-color: #ededed;
     }
