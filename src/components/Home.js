@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import profileImage from '../images/profile.jpg'
+import profile from '../images/Profile.PNG'
 import Contact from './Contact'
 import { FadeInLeft } from 'animate-css-styled-components'
 import { FadeInRight } from 'animate-css-styled-components'
@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <Wrapper>
             <ProfileCard>
-                <ProfileImage src={profileImage} alt='profile'/>
+                <ProfileImage src={profile} alt='profile'/>
                 <ProfileIntro>
                     <FadeInLeft>
                         <h1>Hi there! I'm Jordan.</h1>
@@ -59,6 +59,7 @@ const ProfileImage = styled.img`
     display: block;
     margin: 0 auto;
     border-radius: 50%;
+    height: 200px;
 `
 
 const ProfileIntro = styled.div`
