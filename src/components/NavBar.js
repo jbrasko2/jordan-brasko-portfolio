@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components/macro'
-import resume from '../Jordan Brasko Resume - Styled.pdf'
+import resume from '../Jordan Brasko Resume.pdf'
 
 const NavBar = () => {
     return (
