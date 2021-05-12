@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.bbbe156b.chunk.css",
-    "main.js": "/static/js/main.bd9f2b0e.chunk.js",
-    "main.js.map": "/static/js/main.bd9f2b0e.chunk.js.map",
+    "main.js": "/static/js/main.57ace459.chunk.js",
+    "main.js.map": "/static/js/main.57ace459.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b4207e5d.js",
     "runtime-main.js.map": "/static/js/runtime-main.b4207e5d.js.map",
     "static/js/2.f2130200.chunk.js": "/static/js/2.f2130200.chunk.js",
@@ -13,7 +13,7 @@
     "static/css/main.bbbe156b.chunk.css.map": "/static/css/main.bbbe156b.chunk.css.map",
     "static/js/2.f2130200.chunk.js.LICENSE.txt": "/static/js/2.f2130200.chunk.js.LICENSE.txt",
     "static/media/BandManager.92ccd944.PNG": "/static/media/BandManager.92ccd944.PNG",
-    "static/media/Jordan Brasko Resume - Styled.fc2a8fe2.pdf": "/static/media/Jordan Brasko Resume - Styled.fc2a8fe2.pdf",
+    "static/media/Jordan Brasko Resume.1c03bc79.pdf": "/static/media/Jordan Brasko Resume.1c03bc79.pdf",
     "static/media/Profile.add24c41.PNG": "/static/media/Profile.add24c41.PNG",
     "static/media/SimpleSynth.e63b440d.PNG": "/static/media/SimpleSynth.e63b440d.PNG",
     "static/media/WaveShop.cc934b77.PNG": "/static/media/WaveShop.cc934b77.PNG"
@@ -22,6 +22,6 @@
     "static/js/runtime-main.b4207e5d.js",
     "static/js/2.f2130200.chunk.js",
     "static/css/main.bbbe156b.chunk.css",
-    "static/js/main.bd9f2b0e.chunk.js"
+    "static/js/main.57ace459.chunk.js"
   ]
 }
