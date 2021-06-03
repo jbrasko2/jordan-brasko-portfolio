@@ -25,10 +25,10 @@ const Home = () => {
                     <FadeInRight delay=".75s">
                     <p>I am a record collector, frozen-pizza enthusiast and avid adventurer. I'm
                         currently living the nomad life with my amazing wife - exploring the country's best hiking trails,
-                        critiquing its hidden gem restaurants and closing out the local watering holes.</p>
+                        critiquing its hidden gem restaurants and taking snapshots with my dad's old Canon AV-1.</p>
                     </FadeInRight>
                     <FadeInLeft delay="1s">
-                    <p>I'm looking forward to joining a team that values collaboration, encourages individuality and
+                    <p>I'm looking forward to joining a team that values collaboration, encourages continuous learning and
                         provides dental &#128513;.</p>
                     </FadeInLeft>
                  </ProfileIntro>
@@ -51,7 +51,7 @@ const Wrapper = styled.div`
 
 const ProfileCard = styled.div`
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 900px;
     padding: 24px;
 `
 
