@@ -51,7 +51,7 @@ const Wrapper = styled.div`
 
 const ProfileCard = styled.div`
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 925px;
     padding: 24px;
 `
 
