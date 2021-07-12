@@ -5,10 +5,10 @@ import LocationCard from '../components/LocationCard';
 
 const Photos = () => {
   const locations = [
-    { name: 'Colorado', id: 1 },
-    { name: 'New Mexico', id: 2 },
-    { name: 'Arizona', id: 3 },
-    { name: 'California', id: 4 },
+    { name: 'Colorado', id: 1, image: '000524740002' },
+    { name: 'New Mexico', id: 2, image: '000524740022' },
+    { name: 'Arizona', id: 3, image: '000524750010' },
+    { name: 'California', id: 4, image: '000524730006' },
   ];
 
   return (
