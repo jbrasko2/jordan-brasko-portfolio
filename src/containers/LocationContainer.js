@@ -42,10 +42,19 @@ const LocationButton = styled.button`
   background: white;
   padding: 12px;
   border: none;
+  letter-spacing: 0.25rem;
+  font-family: inherit;
 
   &:hover {
     cursor: pointer;
-    color: deeppink;
+
+    ::after {
+      content: ' -';
+    }
+
+    ::before {
+      content: '- ';
+    }
   }
 `;
 
