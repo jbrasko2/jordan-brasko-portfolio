@@ -27,6 +27,7 @@ const ProjectImage = styled.img`
   height: 240px;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+  margin-top: 24px;
 
   &:hover {
     box-shadow: 4px 8px 16px 4px rgba(0, 0, 0, 0.2);
