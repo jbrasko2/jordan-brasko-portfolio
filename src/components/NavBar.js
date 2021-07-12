@@ -19,6 +19,9 @@ const NavBar = () => {
                     <Link to='/projects'>
                         <LinkButton>Projects</LinkButton>
                     </Link>
+                    <Link to='/photography'>
+                        <LinkButton>Photography</LinkButton>
+                    </Link>
                 </RightWrapperLarge>
             </Wrapper>
             <RightWrapperSmall>
@@ -27,6 +30,9 @@ const NavBar = () => {
                 </a>
                 <Link to='/projects'>
                     <LinkButton>Projects</LinkButton>
+                </Link>
+                <Link to='/photography'>
+                    <LinkButton>Photography</LinkButton>
                 </Link>
             </RightWrapperSmall>
         </>
