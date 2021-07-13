@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components/macro';
 import { useParams } from 'react-router-dom';
 import { FadeInUp } from 'animate-css-styled-components';
 
 const LocationPage = () => {
+  const [loaded, setLoaded] = useState(false);
   const { url } = useParams();
   function importAll(r) {
     return r.keys().map(r);
@@ -58,7 +59,13 @@ const LocationPage = () => {
     <Wrapper>
       {location.images.map((image, index) => (
         <FadeInUp delay={0.25 + index * 0.1 + 's'}>
-          <ImageCard key={index} src={image.default} alt='info' />
+          <ImageCard
+            key={index}
+            src={image.default}
+            alt={image.state}
+            onLoad={() => setLoaded(true)}
+            style={loaded ? {} : { display: 'none' }}
+          />
         </FadeInUp>
       ))}
     </Wrapper>
