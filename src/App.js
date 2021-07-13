@@ -4,7 +4,7 @@ import GlobalStyles from './GlobalStyles';
 import { Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Projects from './containers/Projects';
-import LocationContainer from './containers/LocationContainer';
+import Locations from './components/Locations';
 import LocationPage from './components/LocationPage';
 
 class App extends Component {
@@ -16,7 +16,7 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/projects' component={Projects} />
-          <Route exact path='/photography' component={LocationContainer} />
+          <Route exact path='/photography' component={Locations} />
           <Route exact path='/photography/:url' component={LocationPage} />
         </Switch>
 

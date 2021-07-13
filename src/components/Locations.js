@@ -3,7 +3,7 @@ import styled from 'styled-components/macro';
 import { FadeInUp } from 'animate-css-styled-components';
 import { Link } from 'react-router-dom';
 
-const LocationContainer = () => {
+const Locations = () => {
   const locations = [
     { name: 'Colorado', id: 1, image: '000524740002', url: 'colorado' },
     { name: 'New Mexico', id: 2, image: '000524740022', url: 'new-mexico' },
@@ -60,4 +60,4 @@ const LocationButton = styled.button`
   }
 `;
 
-export default LocationContainer;
+export default Locations;
