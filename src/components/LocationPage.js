@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import { useParams } from 'react-router-dom';
-import { FadeIn } from 'animate-css-styled-components';
+import { FadeInUp } from 'animate-css-styled-components';
 
 const LocationPage = () => {
   const { url } = useParams();
@@ -57,9 +57,9 @@ const LocationPage = () => {
   return (
     <Wrapper>
       {location.images.map((image, index) => (
-        <FadeIn>
+        <FadeInUp delay={0.25 + index * 0.1 + 's'}>
           <ImageCard key={index} src={image.default} alt='info' />
-        </FadeIn>
+        </FadeInUp>
       ))}
     </Wrapper>
   );
@@ -69,6 +69,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 `;
 
 const ImageCard = styled.img`

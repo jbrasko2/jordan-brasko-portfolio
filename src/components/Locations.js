@@ -32,6 +32,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
+  overflow: hidden;
   a {
     text-decoration: none;
   }
