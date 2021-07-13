@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 const LocationPage = () => {
   const { url } = useParams();
   function importAll(r) {
+      console.log(r.keys().map(r))
     return r.keys().map(r);
   }
   
@@ -11,7 +12,7 @@ const LocationPage = () => {
   return (
     <>
       {images.map(image => (
-        <img src={image} alt='info'/>
+        <img src={image.default} alt='info'/>
       ))}
     </>
   );
