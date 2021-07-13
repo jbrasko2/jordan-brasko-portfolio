@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 
 const Locations = () => {
   const locations = [
-    { name: 'Colorado', id: 1, image: '000524740002', url: 'colorado' },
-    { name: 'New Mexico', id: 2, image: '000524740022', url: 'new-mexico' },
-    { name: 'Arizona', id: 3, image: '000524750010', url: 'arizona' },
-    { name: 'California', id: 4, image: '000524730006', url: 'california' },
+    { name: 'Colorado', id: 1, url: 'colorado' },
+    { name: 'New Mexico', id: 2, url: 'new-mexico' },
+    { name: 'Arizona', id: 3, url: 'arizona' },
+    { name: 'California', id: 4, url: 'california' },
   ];
 
   return (
