@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import { useParams } from 'react-router-dom';
+import { FadeIn } from 'animate-css-styled-components';
 
 const LocationPage = () => {
   const { url } = useParams();
@@ -55,8 +56,10 @@ const LocationPage = () => {
 
   return (
     <Wrapper>
-      {location.images.map(image => (
-        <ImageCard src={image.default} alt='info' />
+      {location.images.map((image, index) => (
+        <FadeIn>
+          <ImageCard key={index} src={image.default} alt='info' />
+        </FadeIn>
       ))}
     </Wrapper>
   );

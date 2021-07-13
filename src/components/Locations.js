@@ -13,6 +13,7 @@ const Locations = () => {
 
   return (
     <Wrapper>
+    <h1>Road Trip 2021</h1>
       {locations.map(location => {
         return (
           <FadeInUp delay={location.id * 0.1 + 's'}>
@@ -33,7 +34,10 @@ const Wrapper = styled.div`
   margin-top: 100px;
   a {
     text-decoration: none;
-    margin: 12px;
+  }
+  h1 {
+    color: hsl(0, 0%, 25%);
+    letter-spacing: 0.25rem;
   }
 `;
 
