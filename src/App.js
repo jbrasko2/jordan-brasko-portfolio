@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Projects from './containers/Projects';
 import LocationContainer from './containers/LocationContainer';
+import LocationPage from './components/LocationPage';
 
 class App extends Component {
   render() {
