@@ -3,7 +3,6 @@ import styled from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 
 const LocationNav = props => {
-  console.log(props.location);
   const getClassName = name => {
     if (name === props.location) {
       return 'bold';
