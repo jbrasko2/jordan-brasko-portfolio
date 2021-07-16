@@ -16,7 +16,7 @@ const Locations = () => {
     <h1>Road Trip 2021</h1>
       {locations.map(location => {
         return (
-          <FadeInUp delay={location.id * 0.1 + 's'}>
+          <FadeInUp key={location.id} delay={location.id * 0.1 + 's'}>
             <Link to={`/photography/${location.url}`}>
               <LocationButton>{location.name}</LocationButton>
             </Link>

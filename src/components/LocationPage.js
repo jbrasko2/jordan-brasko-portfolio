@@ -60,7 +60,7 @@ const LocationPage = () => {
     <Wrapper>
       <LocationNav location={location.state} />
       {location.images.map((image, index) => (
-        <FadeInUp delay={0.25 + index * 0.1 + 's'}>
+        <FadeInUp key={index} delay={0.25 + index * 0.1 + 's'}>
           <ImageCard
             key={index}
             src={image.default}

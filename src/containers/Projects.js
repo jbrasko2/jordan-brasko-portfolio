@@ -41,7 +41,7 @@ const Projects = () => {
   return (
     <Wrapper>
       {projects.map(project => (
-        <FadeInUp delay={project.id * 0.1 + 's'} style={{ display: 'flex' }}>
+        <FadeInUp key={project.id} delay={project.id * 0.1 + 's'} style={{ display: 'flex' }}>
           <ProjectCard key={project.id} {...project} />
         </FadeInUp>
       ))}

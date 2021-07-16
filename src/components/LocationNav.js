@@ -11,12 +11,12 @@ const LocationNav = props => {
 
   return (
     <LocationList>
-      <Location>
+      <Location key='colorado'>
         <Link to='/photography/colorado' className={getClassName('colorado')}>
           Colorado
         </Link>
       </Location>
-      <Location>
+      <Location key='new-mexico'>
         <Link
           to='/photography/new-mexico'
           className={getClassName('new-mexico')}
@@ -24,12 +24,12 @@ const LocationNav = props => {
           New Mexico
         </Link>
       </Location>
-      <Location>
+      <Location key='arizona'>
         <Link to='/photography/arizona' className={getClassName('arizona')}>
           Arizona
         </Link>
       </Location>
-      <Location>
+      <Location key='california'>
         <Link
           to='/photography/california'
           className={getClassName('california')}
