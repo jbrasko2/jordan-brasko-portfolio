@@ -2,27 +2,41 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 
-const LocationNav = (props) => {
-    console.log(props.location)
-    const getClassName = name => {
-        if (name === props.location) {
-            return 'bold'
-        }
+const LocationNav = props => {
+  console.log(props.location);
+  const getClassName = name => {
+    if (name === props.location) {
+      return 'bold';
     }
+  };
 
-    return (
+  return (
     <LocationList>
       <Location>
-        <Link to='/photography/colorado' className={getClassName('colorado')}>Colorado</Link>
+        <Link to='/photography/colorado' className={getClassName('colorado')}>
+          Colorado
+        </Link>
       </Location>
       <Location>
-        <Link to='/photography/new-mexico' className={getClassName('new-mexico')}>New Mexico</Link>
+        <Link
+          to='/photography/new-mexico'
+          className={getClassName('new-mexico')}
+        >
+          New Mexico
+        </Link>
       </Location>
       <Location>
-        <Link to='/photography/arizona' className={getClassName('arizona')}>Arizona</Link>
+        <Link to='/photography/arizona' className={getClassName('arizona')}>
+          Arizona
+        </Link>
       </Location>
       <Location>
-        <Link to='/photography/california' className={getClassName('california')}>California</Link>
+        <Link
+          to='/photography/california'
+          className={getClassName('california')}
+        >
+          California
+        </Link>
       </Location>
     </LocationList>
   );
@@ -59,7 +73,7 @@ const Location = styled.li`
   }
 
   a.bold {
-      font-weight: bold;
+    font-weight: bold;
   }
 `;
 
