@@ -5,6 +5,7 @@ import Contact from './Contact'
 import { FadeInLeft } from 'animate-css-styled-components'
 import { FadeInRight } from 'animate-css-styled-components'
 import { FadeInUp } from 'animate-css-styled-components'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -25,7 +26,8 @@ const Home = () => {
                     <FadeInRight delay=".75s">
                     <p>I am a record collector, frozen-pizza enthusiast and avid adventurer. I'm
                         currently living the nomad life with my amazing wife - exploring the country's best hiking trails,
-                        critiquing its hidden gem restaurants and taking snapshots with my dad's old Canon AV-1.</p>
+                        critiquing its hidden gem restaurants and 
+                        <Link to='/photography'> taking snapshots with my dad's old Canon AV-1</Link>.</p>
                     </FadeInRight>
                     <FadeInLeft delay="1s">
                     <p>I'm looking forward to joining a team that values collaboration, encourages continuous learning and
@@ -46,6 +48,15 @@ const Wrapper = styled.div`
 
     @media (max-width: 740px) {
         padding: 24px;
+    }
+
+    a {
+        text-decoration: none;
+        color: deeppink;
+
+        &:hover {
+            text-decoration: revert;
+        }
     }
 `
 
