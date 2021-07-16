@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components/macro';
 import { useParams } from 'react-router-dom';
 import { FadeInUp } from 'animate-css-styled-components';
 import LocationNav from './LocationNav';
 
 const LocationPage = () => {
-  const [loaded, setLoaded] = useState(false);
   const { url } = useParams();
   function importAll(r) {
     return r.keys().map(r);
@@ -55,7 +54,6 @@ const LocationPage = () => {
   ];
 
   const location = locations.find(location => location.state === url);
-
   return (
     <Wrapper>
       <LocationNav location={location.state} />
@@ -65,8 +63,6 @@ const LocationPage = () => {
             key={index}
             src={image.default}
             alt={image.state}
-            onLoad={() => setLoaded(true)}
-            style={loaded ? {} : { display: 'none' }}
           />
         </FadeInUp>
       ))}
