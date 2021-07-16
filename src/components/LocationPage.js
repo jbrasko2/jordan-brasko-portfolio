@@ -3,6 +3,7 @@ import styled from 'styled-components/macro';
 import { useParams } from 'react-router-dom';
 import { FadeInUp } from 'animate-css-styled-components';
 import LocationNav from './LocationNav';
+import ScrollButton from './ScrollButton';
 
 const LocationPage = () => {
   const { url } = useParams();
@@ -54,7 +55,7 @@ const LocationPage = () => {
   ];
 
   const location = locations.find(location => location.state === url);
-  
+
   return (
     <Wrapper>
       <LocationNav location={location.state} />
@@ -67,6 +68,7 @@ const LocationPage = () => {
           />
         </FadeInUp>
       ))}
+      <ScrollButton />
     </Wrapper>
   );
 };
