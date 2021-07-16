@@ -54,6 +54,7 @@ const LocationPage = () => {
   ];
 
   const location = locations.find(location => location.state === url);
+  
   return (
     <Wrapper>
       <LocationNav location={location.state} />
