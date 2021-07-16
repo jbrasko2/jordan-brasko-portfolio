@@ -68,7 +68,7 @@ const LocationPage = () => {
           />
         </FadeInUp>
       ))}
-      <ScrollButton />
+      <Scroll />
     </Wrapper>
   );
 };
@@ -86,5 +86,9 @@ const ImageCard = styled.img`
   max-width: 700px;
   max-height: 700px;
 `;
+
+const Scroll = styled(ScrollButton)`
+  margin-bottom: 100px;
+`
 
 export default LocationPage;
