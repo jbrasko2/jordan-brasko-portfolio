@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components/macro';
 import { useParams } from 'react-router-dom';
 import { FadeInUp } from 'animate-css-styled-components';
+import { Link } from 'react-router-dom';
 
 const LocationPage = () => {
   const [loaded, setLoaded] = useState(false);
@@ -57,6 +58,20 @@ const LocationPage = () => {
 
   return (
     <Wrapper>
+      <LocationList>
+        <Location>
+          <Link to='/photography/colorado'>Colorado</Link>
+        </Location>
+        <Location>
+          <Link to='/photography/new-mexico'>New Mexico</Link>
+        </Location>
+        <Location>
+          <Link to='/photography/arizona'>Arizona</Link>
+        </Location>
+        <Location>
+          <Link to='/photography/california'>California</Link>
+        </Location>
+      </LocationList>
       {location.images.map((image, index) => (
         <FadeInUp delay={0.25 + index * 0.1 + 's'}>
           <ImageCard
@@ -84,6 +99,37 @@ const ImageCard = styled.img`
   margin: 100px;
   max-width: 700px;
   max-height: 700px;
+`;
+
+const LocationList = styled.ol`
+  padding: 0;
+  margin-top: 120px;
+  list-style-type: none;
+`;
+
+const Location = styled.li`
+  display: inline;
+  font-size: 2rem;
+  --spacing: 12px;
+
+  &:not(:first-of-type) {
+    margin-left: var(--spacing);
+
+    &:before {
+      content: '';
+      margin-right: var(--spacing);
+      border-right: 3px solid hsl(0, 0%, 25%);
+    }
+  }
+
+  a {
+    color: hsl(0, 0%, 25%);
+    text-decoration: none;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
 `;
 
 export default LocationPage;
