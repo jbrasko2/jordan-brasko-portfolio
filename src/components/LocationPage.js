@@ -85,6 +85,11 @@ const ImageCard = styled.img`
   margin: 100px;
   max-width: 700px;
   max-height: 700px;
+
+  @media (max-width: 740px) {
+    max-width: 300px;
+  }
+
 `;
 
 const Scroll = styled(ScrollButton)`

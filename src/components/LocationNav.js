@@ -74,6 +74,11 @@ const Location = styled.li`
   a.bold {
     font-weight: bold;
   }
+
+  @media (max-width: 740px) {
+    font-size: 0.75rem;
+  }
+
 `;
 
 export default LocationNav;
