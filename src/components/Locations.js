@@ -9,6 +9,7 @@ const Locations = () => {
     { name: 'New Mexico', id: 2, url: 'new-mexico' },
     { name: 'Arizona', id: 3, url: 'arizona' },
     { name: 'California', id: 4, url: 'california' },
+    { name: 'Chicago', id: 5, url: 'chicago' },
   ];
 
   return (
