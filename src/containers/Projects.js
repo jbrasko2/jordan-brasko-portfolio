@@ -10,7 +10,7 @@ const Projects = () => {
   let projects = [
     {
       id: 1,
-      name: 'The Encyclopedia of Peculiar Birds',
+      name: 'Peculiar Birds',
       desc: " (Work in Progress) Inspired by Audubon's paintings, a reference for interesting birds.",
       tools: 'React | Redux | Thunk | Ruby on Rails API | PostgreSQL Database',
       url: 'https://jbrasko2.github.io/the-encyclopedia-of-peculiar-birds',
