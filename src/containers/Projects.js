@@ -11,8 +11,8 @@ const Projects = () => {
     {
       id: 1,
       name: 'Peculiar Birds',
-      desc: " (Work in Progress) Inspired by Audubon's paintings, a reference for interesting birds.",
-      tools: 'React | Redux | Thunk | Ruby on Rails API | PostgreSQL Database',
+      desc: "Inspired by Audubon's paintings, a reference for interesting birds.",
+      tools: 'React Hooks | Styled Components | Animations | Redux | Thunk | Ruby on Rails API | PostgreSQL Database',
       url: 'https://jbrasko2.github.io/the-encyclopedia-of-peculiar-birds',
       github: 'https://github.com/jbrasko2/the-encyclopedia-of-peculiar-birds',
       image: peculiarBirds,
