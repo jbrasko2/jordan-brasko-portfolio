@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import profile from '../images/Profile.PNG';
+import profile from '../images/Self SureShot - Cropped.jpg';
 import Contact from './Contact';
 import { FadeInLeft } from 'animate-css-styled-components';
 import { FadeInRight } from 'animate-css-styled-components';
@@ -14,7 +14,7 @@ const Home = () => {
         <ProfileImage src={profile} alt='profile' />
         <ProfileIntro>
           <FadeInLeft>
-            <h1>Hi there! I'm Jordan.</h1>
+            <h1>Hi there, I'm Jordan.</h1>
           </FadeInLeft>
           <FadeInLeft delay='.5s'>
             <p>
@@ -41,7 +41,7 @@ const Home = () => {
           <FadeInLeft delay='1s'>
             <p>
               I'm looking forward to joining a team that values collaboration,
-              encourages continuous learning and provides dental &#128513;.
+              encourages continuous learning and provides dental.
             </p>
           </FadeInLeft>
         </ProfileIntro>
@@ -63,7 +63,7 @@ const Wrapper = styled.div`
 
   a {
     text-decoration: none;
-    color: deeppink;
+    color: #0B6A5F;
 
     &:hover {
       text-decoration: revert;
