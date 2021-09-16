@@ -41,7 +41,7 @@ const Home = () => {
           <FadeInLeft delay='1s'>
             <p>
               I'm looking forward to joining a team that values collaboration,
-              encourages continuous learning and provides dental.
+              encourages continuous learning and provides dental :)
             </p>
           </FadeInLeft>
         </ProfileIntro>
