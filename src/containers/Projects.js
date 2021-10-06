@@ -4,6 +4,7 @@ import ProjectCard from '../components/ProjectCard';
 import simpleSynth from '../images/SimpleSynth.PNG';
 import peculiarBirds from '../images/PeculiarBirds.PNG';
 import waveShop from '../images/WaveShop.PNG';
+import bookstore from '../images/Bookstore.PNG';
 import { FadeInUp } from 'animate-css-styled-components';
 
 const Projects = () => {
@@ -12,7 +13,8 @@ const Projects = () => {
       id: 1,
       name: 'Peculiar Birds',
       desc: "Inspired by Audubon's paintings, a reference for interesting birds.",
-      tools: 'React Hooks | Styled Components | Animations | Redux | Thunk | Ruby on Rails API | PostgreSQL Database',
+      tools:
+        'React | Styled Components | Animations | Redux | Thunk | Ruby on Rails API | PostgreSQL Database',
       url: 'https://jbrasko2.github.io/the-encyclopedia-of-peculiar-birds',
       github: 'https://github.com/jbrasko2/the-encyclopedia-of-peculiar-birds',
       image: peculiarBirds,
@@ -28,6 +30,15 @@ const Projects = () => {
     },
     {
       id: 3,
+      name: 'Bookstore',
+      desc: 'Simple CRUD application allows for author/book relationship.',
+      tools: 'React | Node.js | Express | MongoDB',
+      url: 'https://jb-bookstore-frontend.herokuapp.com/',
+      github: 'https://github.com/jbrasko2/bookstore-frontend',
+      image: bookstore,
+    },
+    {
+      id: 4,
       name: 'Simple Synth',
       desc: 'In-browser musical synthesizer that allows users to play and experiment with sound synthesis.',
       tools:
@@ -41,7 +52,11 @@ const Projects = () => {
   return (
     <Wrapper>
       {projects.map(project => (
-        <FadeInUp key={project.id} delay={project.id * 0.1 + 's'} style={{ display: 'flex' }}>
+        <FadeInUp
+          key={project.id}
+          delay={project.id * 0.1 + 's'}
+          style={{ display: 'flex' }}
+        >
           <ProjectCard key={project.id} {...project} />
         </FadeInUp>
       ))}
