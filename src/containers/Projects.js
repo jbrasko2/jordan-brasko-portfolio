@@ -4,7 +4,7 @@ import ProjectCard from '../components/ProjectCard';
 import simpleSynth from '../images/SimpleSynth.PNG';
 import peculiarBirds from '../images/PeculiarBirds.PNG';
 import waveShop from '../images/WaveShop.PNG';
-import bookstore from '../images/Bookstore.PNG';
+import bookstore from '../images/Bookstore.png';
 import { FadeInUp } from 'animate-css-styled-components';
 
 const Projects = () => {
@@ -31,7 +31,7 @@ const Projects = () => {
     {
       id: 3,
       name: 'Bookstore',
-      desc: 'Simple CRUD application allows for author/book relationship.',
+      desc: 'Simple bookstore application with author/book CRUD functionality.',
       tools: 'React | Node.js | Express | MongoDB',
       url: 'https://jb-bookstore-frontend.herokuapp.com/',
       github: 'https://github.com/jbrasko2/bookstore-frontend',
