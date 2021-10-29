@@ -1,14 +1,14 @@
-import React from 'react'
-import styled from 'styled-components/macro'
-import { useParams } from 'react-router-dom'
-import { FadeInUp } from 'animate-css-styled-components'
-import LocationNav from './LocationNav'
-import ScrollButton from './ScrollButton'
+import React from 'react';
+import styled from 'styled-components/macro';
+import { useParams } from 'react-router-dom';
+import { FadeInUp } from 'animate-css-styled-components';
+import LocationNav from './LocationNav';
+import ScrollButton from './ScrollButton';
 
 const LocationPage = () => {
-  const { url } = useParams()
+  const { url } = useParams();
   function importAll(r) {
-    return r.keys().map(r)
+    return r.keys().map(r);
   }
 
   const locations = [
@@ -62,9 +62,19 @@ const LocationPage = () => {
         )
       ),
     },
-  ]
+    {
+      state: 'vermont',
+      images: importAll(
+        require.context(
+          '../location-images/vermont',
+          true,
+          /\.(png|jpe?g|svg)$/
+        )
+      ),
+    },
+  ];
 
-  const location = locations.find(location => location.state === url)
+  const location = locations.find(location => location.state === url);
 
   return (
     <Wrapper>
@@ -76,15 +86,15 @@ const LocationPage = () => {
       ))}
       <Scroll />
     </Wrapper>
-  )
-}
+  );
+};
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-`
+`;
 
 const ImageCard = styled.img`
   display: block;
@@ -95,10 +105,10 @@ const ImageCard = styled.img`
   @media (max-width: 740px) {
     max-width: 300px;
   }
-`
+`;
 
 const Scroll = styled(ScrollButton)`
   margin-bottom: 100px;
-`
+`;
 
-export default LocationPage
+export default LocationPage;

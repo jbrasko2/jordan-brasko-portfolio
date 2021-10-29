@@ -10,11 +10,12 @@ const Locations = () => {
     { name: 'Arizona', id: 3, url: 'arizona' },
     { name: 'California', id: 4, url: 'california' },
     { name: 'Chicago', id: 5, url: 'chicago' },
+    { name: 'Vermont', id: 6, url: 'vermont' },
   ];
 
   return (
     <Wrapper>
-    <h1>Road Trip 2021</h1>
+      <h1>Road Trip 2021</h1>
       {locations.map(location => {
         return (
           <FadeInUp key={location.id} delay={location.id * 0.1 + 's'}>

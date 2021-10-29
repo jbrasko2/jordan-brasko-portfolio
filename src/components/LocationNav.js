@@ -38,11 +38,13 @@ const LocationNav = props => {
         </Link>
       </Location>
       <Location key='chicago'>
-        <Link
-          to='/photography/chicago'
-          className={getClassName('chicago')}
-        >
+        <Link to='/photography/chicago' className={getClassName('chicago')}>
           Chicago
+        </Link>
+      </Location>
+      <Location key='vermont'>
+        <Link to='/photography/vermont' className={getClassName('vermont')}>
+          Vermont
         </Link>
       </Location>
     </LocationList>
@@ -86,7 +88,6 @@ const Location = styled.li`
   @media (max-width: 740px) {
     font-size: 0.75rem;
   }
-
 `;
 
 export default LocationNav;
