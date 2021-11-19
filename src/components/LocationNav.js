@@ -47,6 +47,11 @@ const LocationNav = props => {
           Vermont
         </Link>
       </Location>
+      <Location key='new-york'>
+        <Link to='/photography/new-york' className={getClassName('new-york')}>
+          New York
+        </Link>
+      </Location>
     </LocationList>
   );
 };

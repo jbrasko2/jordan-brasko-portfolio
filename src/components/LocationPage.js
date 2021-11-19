@@ -72,6 +72,16 @@ const LocationPage = () => {
         )
       ),
     },
+    {
+      state: 'new-york',
+      images: importAll(
+        require.context(
+          '../location-images/new-york',
+          true,
+          /\.(png|jpe?g|svg)$/
+        )
+      ),
+    },
   ];
 
   const location = locations.find(location => location.state === url);

@@ -11,6 +11,7 @@ const Locations = () => {
     { name: 'California', id: 4, url: 'california' },
     { name: 'Chicago', id: 5, url: 'chicago' },
     { name: 'Vermont', id: 6, url: 'vermont' },
+    { name: 'New York', id: 7, url: 'new-york' },
   ];
 
   return (
